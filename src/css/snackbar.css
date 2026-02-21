@@ -1,0 +1,104 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 360px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form > label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+.form input[type='number'] {
+  height: 40px;
+  padding: 8px 16px;
+  font-size: 16px;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  background-color: transparent;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-sizing: border-box;
+}
+
+.form input[type='number']:hover {
+  border-color: #000000;
+}
+
+.form input[type='number']:focus,
+.form input[type='number']:active {
+  border-color: #4e75ff;
+}
+
+.form fieldset {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  align-items: center;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form fieldset:hover {
+  border-color: #000000;
+}
+
+.form legend {
+  font-size: 14px;
+  line-height: 1.33;
+  color: #2e2f42;
+  padding: 0 4px;
+  margin-left: 8px;
+}
+
+.form fieldset label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: #2e2f42;
+  cursor: pointer;
+}
+
+.form fieldset input[type='radio'] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form button:hover,
+.form button:focus {
+  background-color: #6c8cff;
+}
